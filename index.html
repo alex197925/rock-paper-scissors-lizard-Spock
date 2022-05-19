@@ -10,22 +10,53 @@
 </head>
 <body>
 
-
-<div class="container">
-
     <div class="container">
-        <h2>Rock, Paper, Scissor and Lizard Game</h2>
-        <button id="rock"><img src="image/stone.png">rock</button>
-        <button id="paper"><img src="image/paper.png"></button>
-        <button id="scissor"><img src="image/scissors.png"></button>
-        <button id="lizard"><img src="image/lizard.png"></button>
-        <button id="spock"><img src="image/computer.png"></button>
-        <button>Reset</button>
+        <div class="button-collection">
+            <h2>Rock, Paper, Scissor and Lizard Game</h2>
+            <button id="rock"><img src="image/stone.png"></button>
+            <button id="paper"><img src="image/paper.png"></button>
+            <button id="scissor"><img src="image/scissors.png"></button>
+            <button id="lizard"><img src="image/lizard.png"></button>
+            <button id="spock"><img src="image/vulcan-salute.png"></button>
+        </div>
 
+
+<div class="score">
+    <div class="main-score">
+        <div class="title"> <h5>Me</h5>
+        </div>
+        <div id="player-score">
+            <p class="playerUpdateScore">0</p>
+        </div>
+        <div class="player-final-score">
+            <div class="title"> <h5>My result</h5></div>
+            <p id="p-final-score" class="playerUpdateScore">0</p>
+        </div>
     </div>
 
+<div class="final-score">
+    <div class="player-final-score">
+       <div class="title"> <h5>Bot result</h5></div>
+        <p  class="playerUpdateScore">0</p>
+    </div>
+    <div class="title"> <h5>Bot result</h5>
+        <p id="tie-score"></p>
+    </div>
+    <div class="computer-final-score">
+        <p id="b-final-score" class="botUpdateScore">0</p>
+    </div>
+    </div>
+</div>
+        <div class="reset-game">
+            <button class="btn-reset" id="reset">Reset</button></div>
 
 </div>
+
+
+    </body>
+
+
+
 
 
 
