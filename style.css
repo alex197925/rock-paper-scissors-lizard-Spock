@@ -1,18 +1,10 @@
 body {
     padding: 0;
     margin: 0;
-}
-
-
-.all-buttons {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
 }
 
-.all-buttons > button {
-    padding: 10px;
-    margin: 6px;
-}
+
+
+
+
