@@ -19,8 +19,7 @@ will make everything from the beginning, step by step!!!
 - [ ] Create a function gameOver() which will display the final result with reload button. The function will be called when moves will become equals to 10.
 - [ ] Call the playGame() function inside the game() function.
 - [ ] Now call the game() function at the end of the file.
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 024b238efd597cab2c2ec76f5bd7d480788617e9
+
+
