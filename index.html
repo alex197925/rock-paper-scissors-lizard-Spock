@@ -10,50 +10,33 @@
 </head>
 <body>
 
-    <div class="container">
-        <div class="button-collection">
-            <h2>Rock, Paper, Scissor and Lizard Game</h2>
-            <button id="rock"><img src="image/stone.png"></button>
-            <button id="paper"><img src="image/paper.png"></button>
-            <button id="scissor"><img src="image/scissors.png"></button>
-            <button id="lizard"><img src="image/lizard.png"></button>
-            <button id="spock"><img src="image/vulcan-salute.png"></button>
-        </div>
+  <div class="container">
+
+      <div class="title">Rock, Paper, Scissors, Lizard, Spock</div>
+      <div class="main-score">
+      <div class="user-score"></div>
+          <h2>User</h2>
+          <p class="user-count count">0</p>
 
 
-<div class="score">
-    <div class="main-score">
-        <div class="title"> <h5>Me</h5>
-        </div>
-        <div id="player-score">
-            <p class="playerUpdateScore">0</p>
-        </div>
-        <div class="player-final-score">
-            <div class="title"> <h5>My result</h5></div>
-            <p id="p-final-score" class="playerUpdateScore">0</p>
-        </div>
-    </div>
+          <div class="computer-score">
+              <h2>Computer</h2>
+              <p class="computer-count count">0</p>
+          </div>
+      </div>
 
-<div class="final-score">
-    <div class="player-final-score">
-       <div class="title"> <h5>Bot result</h5></div>
-        <p  class="playerUpdateScore">0</p>
-    </div>
-    <div class="title"> <h5>Bot result</h5>
-        <p id="tie-score"></p>
-    </div>
-    <div class="computer-final-score">
-        <p id="b-final-score" class="botUpdateScore">0</p>
-    </div>
-    </div>
+<div class="choose-move">Choose your move</div>
+      <div class="moves-left">Moves Left: 10 </div>
+
+<div class="options-btn">
+    <button id="rock">Rock</button>
+    <button id="paper">Paper</button>
+    <button id="scissors">Scissors</button>
+    <button id="lizard">Lizard</button>
+    <button id="spock">Spock</button>
 </div>
-        <div class="reset-game">
-            <button class="btn-reset" id="reset">Reset</button></div>
-
-</div>
-
-
-    </body>
+      <div class="result"></div>
+      <div class="reset"></div>
 
 
 
@@ -70,24 +53,43 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  </div>
 
 
 
 <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
