@@ -5,9 +5,11 @@ function rpgGame(yourChoice) {
      botChoice = numberToChoice(randomToNumber());
 
     console.log(botChoice);
-    //results = decideWinner(humanChoice, botChoice);
+    results = decideWinner(humanChoice, botChoice);
+    console.log(results);
 
-    //message = finalMessage(results); // {'message': "You won!", 'color': 'green'}
+    message = finalMessage(results); // {'message': "You won!", 'color': 'green'}
+    console.log(message);
 
 //rpgFrontEnd(yourChoice.id, botChoice, message);
 
@@ -25,9 +27,42 @@ function numberToChoice(number) {
 function decideWinner(yourChoice, computerChoice) {
     let gameDatabase = {
         "rock": {"scissors": 1, "rock": 0.5, "paper": 0, "lizard": 2, "spock": 3},
-        "scissors": {"scissors": 0.5, "rock": 1, "paper": 0, "lizard": 2, "spock:": 3},
+        "scissors": {"scissors": 0.5, "rock": 3, "paper": 0, "lizard": 2, "spock:": 3},
         "paper": {"scissors": 1,  "rock": 0, "paper": 0.5, "lizard": 2, "spock": 3},
         "lizard": {"scissors": 1, "rock": 1, "paper": 2, "lizard": 0.5, "spock": 2 },
-        "spock":  {"scissors": 3, "rock": 2, "paper": 0.5, "lizard": 1, "spock:": 0.5},
+        "spock":  {"scissors": 3, "rock": 2, "paper": 0, "lizard": 1, "spock:": 0.5},
+    };
+
+    let yourScore = gameDatabase[yourChoice][computerChoice];
+    let computerScore = gameDatabase[computerChoice][yourChoice];
+
+    return[yourScore, computerScore];
+}
+
+function finalMessage([yourScore, computerScore]) {
+    if(yourScore === 0) {
+        return{ "message": "You lost!", "color": "red"};
+    }else if (yourScore === 0.5) {
+        return {"message": "You tied!", "color": "yellow"};
+    }else {
+        return {"message": "You Won!", "color": "green"};
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
