@@ -64,6 +64,21 @@ function rpsFrontEnd(humanImageChoice, botImageChoice, finaleMessage) {
     document.getElementById("scissors").remove();
     document.getElementById("lizard").remove();
     document.getElementById("spock").remove();
+
+    let humanDiv = document.createElement("div");
+    let botDiv = document.createElement("div");
+    let messageDiv = document.createElement("div");
+
+    humanDiv.innerHTML = "<img src='" + imagesDataBase[humanImageChoice] + "'style='box-shadow: 0px 10px 50px rgba(37, 50, 233, 1)'>";
+    botDiv.innerHTML = "<img src='" + imagesDataBase[botImageChoice] + "'style='box-shadow: 0px 10px 50px rgba(243, 38, 24, 1)'>";
+
+    document.getElementById("flex-box-rps-div").append(humanDiv);
+    document.getElementById("flex-box-rps-div").append(botDiv);
+
+
+
+
+
 }
 
 
