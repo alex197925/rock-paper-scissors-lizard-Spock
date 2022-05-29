@@ -27,8 +27,8 @@ function numberToChoice(number) {
 function decideWinner(yourChoice, computerChoice) {
     let gameDatabase = {
         "rock": {"scissors": 1, "rock": 0.5, "paper": 0, "lizard": 2, "spock": 3},
-        "scissors": {"scissors": 0.5, "rock": 3, "paper": 0, "lizard": 2, "spock:": 3},
-        "paper": {"scissors": 1,  "rock": 0, "paper": 0.5, "lizard": 2, "spock": 3},
+        "scissors": {"scissors": 0.5, "rock": 3, "paper": 1, "lizard": 2, "spock:": 3},
+        "paper": {"scissors": 0,  "rock": 0, "paper": 0.5, "lizard": 2, "spock": 3},
         "lizard": {"scissors": 1, "rock": 1, "paper": 2, "lizard": 0.5, "spock": 2 },
         "spock":  {"scissors": 3, "rock": 2, "paper": 0, "lizard": 1, "spock:": 0.5},
     };
@@ -71,10 +71,11 @@ function rpsFrontEnd(humanImageChoice, botImageChoice, finaleMessage) {
 
     humanDiv.innerHTML = "<img src='" + imagesDataBase[humanImageChoice] + "'style='box-shadow: 0px 10px 50px rgba(37, 50, 233, 1)'>";
     botDiv.innerHTML = "<img src='" + imagesDataBase[botImageChoice] + "'style='box-shadow: 0px 10px 50px rgba(243, 38, 24, 1)'>";
+    messageDiv .innerHTML = "<h1 style='color: " + finaleMessage["color"] + "; font-size: 60px; padding: 30px; '>" + finaleMessage["message"] + "</h1>"
 
     document.getElementById("flex-box-rps-div").append(humanDiv);
     document.getElementById("flex-box-rps-div").append(botDiv);
-
+    document.getElementById("flex-box-rps-div").append(messageDiv);
 
 
 
