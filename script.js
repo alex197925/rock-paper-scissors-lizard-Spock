@@ -11,7 +11,7 @@ function rpgGame(yourChoice) {
     message = finalMessage(results); // {'message': "You won!", 'color': 'green'}
     console.log(message);
 
-//rpgFrontEnd(yourChoice.id, botChoice, message);
+rpsFrontEnd(yourChoice.id, botChoice, message);
 
 }
 
@@ -50,7 +50,21 @@ function finalMessage([yourScore, computerScore]) {
 }
 
 
-
+function rpsFrontEnd(humanImageChoice, botImageChoice, finaleMessage) {
+ let imagesDataBase = {
+"rock": document.getElementById("rock").src,
+     "paper": document.getElementById("paper").src,
+     "scissors": document.getElementById("scissors").src,
+     "lizard": document.getElementById("lizard").src,
+     "spock": document.getElementById("spock").src
+ }
+// Let's remove all the images
+    document.getElementById("rock").remove();
+    document.getElementById("paper").remove();
+    document.getElementById("scissors").remove();
+    document.getElementById("lizard").remove();
+    document.getElementById("spock").remove();
+}
 
 
 
